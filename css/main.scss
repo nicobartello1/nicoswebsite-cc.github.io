@@ -28,7 +28,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+body
+{
+background: url(http://freedomreply.com/wp-content/uploads/2014/06/background-images-for-web-design-14.jpg) repeat-x;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
