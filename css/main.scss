@@ -144,3 +144,11 @@ ul.topnav li.icon {display: none;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a class="active" href="#">2</a></li>
+  <li><a href="#Phtoto Gallery">3</a></li>
+  <li><a href="#Contact">4</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
