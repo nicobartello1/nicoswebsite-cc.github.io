@@ -2,13 +2,42 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/html" href="SideNav/index.html">
-	   <div id="mySidenav" class="sidenav">
+	   
+<!--My side navigation-->
+<div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <a href="http://nicoswebsite.com">Home</a>
 <a href="http://nicoswebsite.com/Contact">Contact</a>
 <a href="https://www.youtube.com/channel/UC5HUKijpg2bhR_ZVrhvivhQ">Youtube Channel</a>
 </div>
-	   <script>
+<button type="button" onclick="openNav()">Menu</button>
+<div id="main">
+
+	<!--Main Header-->
+	<html>
+   <body>
+      <center><h1><font color=#cc0000>Nico's Website</font></h1></center>
+   </body>
+	<head>
+	</head>
+	
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+
+<!--End mc_embed_signup-->
+<!-- hitwebcounter Code START -->
+<center><a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6482683&style=0009&nbdigits=5&type=ip&initCount=0" title="my widget for counting" Alt="my widget for counting"   border="0" >
+</a>                                        <br/>
+                                        
+   </html>
+	
+	
+	
+	<!--This Is Where I will put all of my Javascript!--->
+		<script>
 		   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -20,21 +49,8 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
-	   </script>
-
-<button type="button" onclick="openNav()">Menu</button>
-<div id="main">
-<html>
-   <body>
-      <center><h1><font color=#cc0000>Nico's Website</font></h1></center>
-   </body>
-	<head>
-	</head>
-	
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.city {
+			
+			.city {
     float: left;
     margin: 5px;
     padding: 15px;
@@ -42,31 +58,46 @@ function closeNav() {
     height: 300px;
     border: 1px solid black;
 } 
-</style>
-</head>
-<body>
+			
+			.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-</body>
-</html>
-   <center><ul class="topnav" id="myTopnav">
-  <li><a href="http://nicoswebsite.com">Home</a></li>
-  <li><a href="http://nicoswebsite.com/Photo_Gallery">Photo Gallery</a></li>
-  <li><a href="http://nicoswebsite.com/Contact">Contact</a></li>
-  <li><a href="https://www.youtube.com/channel/UC5HUKijpg2bhR_ZVrhvivhQ">My Youtube Channel</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-  </li>
-      </ul>
-	   </div>
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-<!--End mc_embed_signup-->
-<!-- hitwebcounter Code START -->
-<center><a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6482683&style=0009&nbdigits=5&type=ip&initCount=0" title="my widget for counting" Alt="my widget for counting"   border="0" >
-</a>                                        <br/>
-                                        
-   </html>
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	   </script>
 
                                             
 
