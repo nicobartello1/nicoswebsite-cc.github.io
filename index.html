@@ -2,6 +2,30 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/javascript" href="Animation.css">
+	   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+	   <script>
+		   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+	   </script>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+<div id="main">
 <html>
    <body>
       <center><h1><font color=#cc0000>Nico's Website</font></h1></center>
@@ -35,35 +59,10 @@
     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li>
       </ul>
-	   
-	   <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-	   <script>
-		   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-	   </script>
 
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()">open</span>
-
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<div id="main">
-  ...
-</div>
+	   </div>
 
 
 <!--End mc_embed_signup-->
