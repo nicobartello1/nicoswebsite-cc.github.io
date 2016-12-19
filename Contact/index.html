@@ -9,30 +9,29 @@
 	<html lang="en-us">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.city {
-    float: left;
-    margin: 5px;
-    padding: 15px;
-    max-width: 300px;
-    height: 300px;
-    border: 1px solid black;
-} 
-</style>
-</head>
-<body>
-
-</body>
-</html>
-   <center><ul class="topnav" id="myTopnav">
-  <li><a href="http://nicoswebsite.com">Home</a></li>
-  <li><a href="http://nicoswebsite.com/Photo_Gallery">Photo Gallery</a></li>
-  <li><a href="http://nicoswebsite.com/Contact">Contact</a></li>
-  <li><a href="https://www.youtube.com/channel/UC5HUKijpg2bhR_ZVrhvivhQ">My Youtube Channel</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-  </li>
-      </ul>
+<!--My side navigation-->
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="http://nicoswebsite.com">Home</a>
+<a href="http://nicoswebsite.com/Contact">Contact</a>
+<a href="https://www.youtube.com/channel/UC5HUKijpg2bhR_ZVrhvivhQ">Youtube Channel</a>
+</div>
+		<script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+			</script>
+<button type="button" onclick="openNav()">Menu</button>
+<div id="main">
 	   <!-- www.123contactform.com script begins here -->
 <script type="text/javascript" defer src="//www.123contactform.com/embed/2370395.js" data-role="form"></script>
 <p>Powered by <a class="footerLink13" title="123ContactForm" href="http://www.123contactform.com">123ContactForm</a>&nbsp;|&nbsp;<a style="font-size:small!important;color:#000000!important; text-decoration:underline!important;" title="Looks like phishing? Report it!" href="http://www.123contactform.com/sfnew.php?s=123contactform-52&control119314=http:///contact-form--2370395.html&control190=Report%20abuse" rel="nofollow">Report abuse</a></p><!-- www.123contactform.com script ends here -->
